@@ -21,6 +21,8 @@ class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        val actionbar = supportActionBar
+        actionbar!!.title="Login"
 
         auth = FirebaseAuth.getInstance()
 

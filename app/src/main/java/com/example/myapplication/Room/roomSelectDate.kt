@@ -14,15 +14,17 @@ class roomSelectDate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_room_select_date)
+        val actionbar = supportActionBar
+        actionbar!!.title="Room Reservation"
 
         val today = Calendar.getInstance().timeInMillis
         calendarRoom.minDate = today
 
-        textView71.text = today.toString()
+        //textView71.text = today.toString()
 
         calendarRoom.setOnDateChangeListener(CalendarView.OnDateChangeListener { _, year, month, dayOfMonth ->
             dateRoom = dayOfMonth.toString() + "/" + (month + 1) + "/" + year
-            textView71.text = dateRoom
+            //textView71.text = dateRoom
         })
 
         btnNext21.setOnClickListener {

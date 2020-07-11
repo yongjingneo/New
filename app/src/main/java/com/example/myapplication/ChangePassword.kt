@@ -19,6 +19,8 @@ class ChangePassword : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_change_password)
+        val actionbar = supportActionBar
+        actionbar!!.title="Change Password"
 
         auth = FirebaseAuth.getInstance()
 

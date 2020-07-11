@@ -18,6 +18,8 @@ class confirmTable : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_confirm_table)
+        val actionbar = supportActionBar
+        actionbar!!.title="Table Reservation"
 
         auth = FirebaseAuth.getInstance()
         //tableList = mutableListOf()

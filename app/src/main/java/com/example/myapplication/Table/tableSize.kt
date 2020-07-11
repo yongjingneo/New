@@ -17,6 +17,8 @@ class tableSize : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_table_size)
+        val actionbar = supportActionBar
+        actionbar!!.title="Table Reservation"
 
         var options = arrayOf("Please select table size", "Big Table", "Small Table")
         spinnerTable.adapter = ArrayAdapter<String>(this,

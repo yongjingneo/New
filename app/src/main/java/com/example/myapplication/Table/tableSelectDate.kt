@@ -15,15 +15,17 @@ class tableSelectDate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_table_select_date)
+        val actionbar = supportActionBar
+        actionbar!!.title="Table Reservation"
 
         val today = Calendar.getInstance().timeInMillis
         calendarTable.minDate = today
 
-        textView7.text = today.toString()
+        //textView7.text = today.toString()
 
         calendarTable.setOnDateChangeListener(CalendarView.OnDateChangeListener { _, year, month, dayOfMonth ->
             date = dayOfMonth.toString() + "/" + (month + 1) + "/" + year
-            textView7.text = date
+            //textView7.text = date
         })
 
         btnNext2.setOnClickListener {

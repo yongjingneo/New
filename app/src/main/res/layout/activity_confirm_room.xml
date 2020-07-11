@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
-        android:text="Table Reservation"
+        android:text="Room Reservation"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="30sp" />
 
@@ -61,6 +61,7 @@
         android:id="@+id/txtRtime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
         android:text="TextView"
         android:textSize="20sp" />
 

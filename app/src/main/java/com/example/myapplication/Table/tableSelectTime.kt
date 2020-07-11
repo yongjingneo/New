@@ -14,6 +14,8 @@ class tableSelectTime : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_table_select_time)
+        val actionbar = supportActionBar
+        actionbar!!.title="Table Reservation"
 
         var timeOptions = arrayOf("10:00am-12:00pm", "12:30pm-2:30pm", "3:00pm-5:00pm", "5:30pm-7:30pm", "8:00pm-10:00pm")
 

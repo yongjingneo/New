@@ -17,6 +17,8 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+        val actionbar = supportActionBar
+        actionbar!!.title="Register"
 
         auth = FirebaseAuth.getInstance()
 
